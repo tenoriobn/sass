@@ -1,7 +1,10 @@
 @import '../abstract/_variaveis.scss'
 
-@mixin bg-cores($cores...)
-    background: linear-gradient(to left, $cores...)
+@mixin bg-cores($lado, $cores...)
+    @if $lado == left
+        background: linear-gradient(to left, $cores)
+    @else
+        background: linear-gradient(to right, $cores)
 
 footer
     text-align: center
@@ -10,7 +13,7 @@ footer
     margin-top: 1rem
     padding: 1.2rem
     
-    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria, $cor-primaria)
+    @include bg-cores("", $cor-primaria, $cor-secundaria, $cor-terciaria, $cor-primaria)
 
     i
         color: red

@@ -1,0 +1,36 @@
+@import '../abstract/_variaveis.scss'
+
+@mixin texto ($font-size, $font-weight, $text-align, $text-transform)
+    @if $text-transform == uppercase
+        font-size: $font-size
+        font-weight: $font-weight
+        text-align: $text-align
+        text-transform: $text-transform
+
+    @else
+        font-size: $font-size
+        font-weight: $font-weight
+        text-align: $text-align
+
+
+.conforto
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__img
+        margin-top: 5rem
+
+    h3
+        @include texto($tamanho-do-texto / 2.5, 300, center, uppercase)
+        margin-top: 5rem
+
+    h4
+        @include texto($tamanho-do-texto / 1.2, 300, center)
+        margin-top: 1rem
+
+    p
+        @include texto($tamanho-do-texto / 2.8, 300, center)
+        margin: 1rem 0 3rem 0
+
+        max-width: 75rem

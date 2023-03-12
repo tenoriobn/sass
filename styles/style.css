@@ -149,8 +149,37 @@ footer {
   border-top: 2px solid #495371;
   margin-top: 1rem;
   padding: 1.2rem;
-  background: linear-gradient(to left, #495371, #74959A, #f1e0ac, #495371);
+  background: linear-gradient(to right, #495371, #74959A, #f1e0ac, #495371);
 }
 footer i {
   color: red;
+}
+
+.conforto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conforto__img {
+  margin-top: 5rem;
+}
+.conforto h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+.conforto h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
+}
+.conforto p {
+  font-size: 1.0714285714rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 1rem 0 3rem 0;
+  max-width: 75rem;
 }/*# sourceMappingURL=style.css.map */
